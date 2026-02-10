@@ -69,9 +69,8 @@ def load_data():
     },
 ],
     )
-    
-index = VectorStoreIndex.from_documents(docs)
-return index
+    index = VectorStoreIndex.from_documents(docs)
+    return index
 
 index = load_data()
 
