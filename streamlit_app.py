@@ -42,7 +42,7 @@ def load_data():
     Settings.llm = HuggingFaceInferenceAPI(
     model_name="Qwen/Qwen2.5-1.5B-Instruct",
     token=st.secrets.hftoken,
-    generate_kwargs={"temperature": 0.7, "top_k": 50, "top_p": 0.95},
+    generate_kwargs={"temperature": 0.2, "top_k": 50, "top_p": 0.95},
     provider="auto",  # this will use the best provider available
     system_prompt="""I am here to answer your questions about SJSU's AEPG program.  
     You are to answer questions about the Artistic Excellence Grant Program at San Jose State University based on the documents you have access to.
