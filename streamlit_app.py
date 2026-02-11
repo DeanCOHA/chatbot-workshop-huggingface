@@ -51,7 +51,7 @@ def load_data():
     You may refer to ideal proposals that are contained within the documents.
     If you are unsure about the answer, please indicate in the answer that you should reach out to Dr. Cheyla Samuelson, Director of Public Programming, at cheyla.samuelson@sjsu.edu.
     Answer questions in a causal tone, but professionally. 
-    Respond in fewer than 100 words.""",
+    Respond in fewer than 100 words."""
     )
     index = VectorStoreIndex.from_documents(docs)
     return index
